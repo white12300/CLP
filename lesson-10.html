@@ -1,0 +1,22 @@
+<form action="/conact" method="post">
+
+    <label for="name">名前</label>
+    <input type="text" id="name" name="name">
+    
+    <label for="email"><br>メールアドレス</label>
+    <input type="email" id="email" name="email">
+
+    <label for="type"><br>お問い合わせ種別</label>
+    <select id="type" name="type">
+        <option value="syouhin">商品について</option>
+        <option value="konyu">ご注文について</option>
+        <option value="after">注文後について</option>
+    </select>
+
+    <label for="message"><br>メッセージ</label>
+    <textarea id="message" name="message"></textarea>
+
+    <br><button type="submit">送信</button>
+    <button type="reset">リセット</button>
+    <button type="button" onclick="doSomething()">ボタン</button>
+</form>
