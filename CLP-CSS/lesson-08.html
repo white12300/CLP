@@ -1,0 +1,31 @@
+<style>
+    .parent{
+        position: relative;
+        width: 500px;
+        height: 300px;
+    }
+
+    .child{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .overlay{
+        position: fixed;
+        z-index: 100;
+        background: rgba(0,0,0,0.2);
+        inset: 0;
+    }
+
+    .button:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+<div class="parent">
+    <p class="child">子供</p>
+</div>
+<div class="overlay"></div>
+
+<button class="button" type="button">ボタン</button>
