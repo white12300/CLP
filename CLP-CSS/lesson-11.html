@@ -1,0 +1,26 @@
+<style>
+    .button:hover {
+        background-color: aquamarine;
+    }
+
+    .button {
+        transition: background-color 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .h1 {
+        animation: fadeIn 1s ease forwards;
+    }
+</style>
+
+<h1>見出し</h1>
+<button class="button" type="button">ボタン</button>
