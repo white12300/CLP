@@ -1,0 +1,42 @@
+<style>
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        display: flex;
+        width: 100px;
+        height: 50px;
+        border: 1.5px solid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        .box {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 0 0 calc(50% - 10px);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .card {
+            flex: 0 0 calc(33% - 10px);
+        }
+    }
+</style>
+
+<div class="box">
+    <div class="card">カード１</div>
+    <div class="card">カード２</div>
+    <div class="card">カード３</div>
+    <div class="card">カード４</div>
+    <div class="card">カード５</div>
+    <div class="card">カード６</div>
+</div>
