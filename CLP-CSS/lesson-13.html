@@ -1,0 +1,22 @@
+<style>
+    .kome::before{
+        content: "※";
+        color: red;
+    }
+
+    .required::after {
+        content: "(必須)";
+        font-size: 10px;
+        color: red;
+    }
+
+    input::placeholder{
+        color: #aaa;
+    }
+
+</style>
+
+<p class="kome">緊急です</p>
+
+<label class="required" for="Rank">最高ランク</label>
+<input id="Rank" type="text" placeholder="Beyond">
